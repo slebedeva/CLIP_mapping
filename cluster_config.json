@@ -1,0 +1,31 @@
+{
+    "__default__" :
+    {
+        "h_vmem" : "10G",
+        "time" : "10:0:0",
+        "err" : "logs/{rule}.log",
+        "n" : 1,
+	"m" : "eas",
+	"account" : "$USER@HOSTNAME",
+        "name" : "{rule}"
+    },
+    "segemehl" :
+    {
+        "n" : 4,
+        "h_vmem" : "30G",
+	"time" : "48:00:00"
+    },
+    "cutadapt" :
+    {
+        "n" : 4
+    },
+    "collapse_reads" :
+    {
+	"h_vmem" : "30G"
+    },
+    "segemehl_idx" :
+    {
+	"h_vmem" : "80G",
+	"time" : "24:00:00"
+    }
+}
